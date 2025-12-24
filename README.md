@@ -46,33 +46,33 @@ The server runs on `ws://localhost:8080/ws`
 
 ```
 cabo/
-©À©¤©¤ CaboGame/
-©¦   ©À©¤©¤ Models/           # Data models
-©¦   ©¦   ©À©¤©¤ Card.swift
-©¦   ©¦   ©À©¤©¤ Player.swift
-©¦   ©¦   ©À©¤©¤ GameState.swift
-©¦   ©¦   ©¸©¤©¤ GameAction.swift
-©¦   ©À©¤©¤ Engine/           # Game logic
-©¦   ©¦   ©À©¤©¤ GameEngine.swift
-©¦   ©¦   ©¸©¤©¤ TurnStateMachine.swift
-©¦   ©À©¤©¤ Networking/       # Multiplayer
-©¦   ©¦   ©À©¤©¤ WebSocketManager.swift
-©¦   ©¦   ©À©¤©¤ GameRoom.swift
-©¦   ©¦   ©¸©¤©¤ NetworkMessage.swift
-©¦   ©À©¤©¤ ViewModels/       # MVVM
-©¦   ©¦   ©¸©¤©¤ GameViewModel.swift
-©¦   ©À©¤©¤ Views/            # SwiftUI
-©¦   ©¦   ©À©¤©¤ GameView.swift
-©¦   ©¦   ©À©¤©¤ LobbyView.swift
-©¦   ©¦   ©À©¤©¤ CardView.swift
-©¦   ©¦   ©¸©¤©¤ PlayerHandView.swift
-©¦   ©¸©¤©¤ Utils/
-©¦       ©¸©¤©¤ Constants.swift
-©À©¤©¤ Server/               # Node.js backend
-©¦   ©À©¤©¤ server.js
-©¦   ©¸©¤©¤ package.json
-©À©¤©¤ README.md
-©¸©¤©¤ ARCHITECTURE.md       # Technical details
+|-- CaboGame/
+|   |-- Models/              # Data models
+|   |   |-- Card.swift
+|   |   |-- Player.swift
+|   |   |-- GameState.swift
+|   |   +-- GameAction.swift
+|   |-- Engine/              # Game logic
+|   |   |-- GameEngine.swift
+|   |   +-- TurnStateMachine.swift
+|   |-- Networking/          # Multiplayer
+|   |   |-- WebSocketManager.swift
+|   |   |-- GameRoom.swift
+|   |   +-- NetworkMessage.swift
+|   |-- ViewModels/          # MVVM
+|   |   +-- GameViewModel.swift
+|   |-- Views/               # SwiftUI
+|   |   |-- GameView.swift
+|   |   |-- LobbyView.swift
+|   |   |-- CardView.swift
+|   |   +-- PlayerHandView.swift
+|   +-- Utils/
+|       +-- Constants.swift
+|-- Server/                  # Node.js backend
+|   |-- server.js
+|   +-- package.json
+|-- README.md
++-- ARCHITECTURE.md          # Technical details
 ```
 
 ## Game Rules
