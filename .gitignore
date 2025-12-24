@@ -1,0 +1,110 @@
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# =========================
+# Xcode
+# =========================
+# Build generated
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcuserstate
+
+# Xcode workspace settings
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives
+*.xcarchive
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# CocoaPods (if used later)
+Pods/
+Podfile.lock
+
+# Carthage (if used later)
+Carthage/Build/
+Carthage/Checkouts/
+
+# =========================
+# Node.js (Server)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# =========================
+# IDE & Editors
+# =========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cursor/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+CaboGame_temp/
+
+# =========================
+# Testing & Coverage
+# =========================
+coverage/
+*.gcno
+*.gcda
+
+# =========================
+# Misc
+# =========================
+*.ipa
+*.dSYM.zip
+*.dSYM
+Thumbs.db
+

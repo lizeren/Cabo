@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E0ACB752EF90952006813F3 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB652EF90952006813F3 /* GameState.swift */; };
+		5E0ACB762EF90952006813F3 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB722EF90952006813F3 /* LobbyView.swift */; };
+		5E0ACB772EF90952006813F3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB662EF90952006813F3 /* Player.swift */; };
+		5E0ACB782EF90952006813F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB6C2EF90952006813F3 /* Constants.swift */; };
+		5E0ACB792EF90952006813F3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB6A2EF90952006813F3 /* WebSocketManager.swift */; };
+		5E0ACB7A2EF90952006813F3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB702EF90952006813F3 /* CardView.swift */; };
+		5E0ACB7B2EF90952006813F3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB6E2EF90952006813F3 /* GameViewModel.swift */; };
+		5E0ACB7C2EF90952006813F3 /* GameAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB642EF90952006813F3 /* GameAction.swift */; };
+		5E0ACB7D2EF90952006813F3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB632EF90952006813F3 /* Card.swift */; };
+		5E0ACB7E2EF90952006813F3 /* GameRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB682EF90952006813F3 /* GameRoom.swift */; };
+		5E0ACB7F2EF90952006813F3 /* TurnStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB612EF90952006813F3 /* TurnStateMachine.swift */; };
+		5E0ACB802EF90952006813F3 /* PlayerHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB732EF90952006813F3 /* PlayerHandView.swift */; };
+		5E0ACB812EF90952006813F3 /* NetworkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB692EF90952006813F3 /* NetworkMessage.swift */; };
+		5E0ACB822EF90952006813F3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB712EF90952006813F3 /* GameView.swift */; };
+		5E0ACB832EF90952006813F3 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB602EF90952006813F3 /* GameEngine.swift */; };
+		5E0ACB852EF90B20006813F3 /* CaboGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ACB842EF90B20006813F3 /* CaboGameApp.swift */; };
+		5E93C5912EFA546800DEF05D /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93C5902EFA546800DEF05D /* AudioManager.swift */; };
+		5E93C5932EFA55DD00DEF05D /* kahoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E93C5922EFA55DD00DEF05D /* kahoot.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EBFEEED2EF907F300B5C7DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EBFEED72EF907F100B5C7DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EBFEEDE2EF907F100B5C7DC;
+			remoteInfo = CaboGame;
+		};
+		5EBFEEF72EF907F300B5C7DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EBFEED72EF907F100B5C7DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EBFEEDE2EF907F100B5C7DC;
+			remoteInfo = CaboGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E0ACB602EF90952006813F3 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		5E0ACB612EF90952006813F3 /* TurnStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnStateMachine.swift; sourceTree = "<group>"; };
+		5E0ACB632EF90952006813F3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5E0ACB642EF90952006813F3 /* GameAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAction.swift; sourceTree = "<group>"; };
+		5E0ACB652EF90952006813F3 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		5E0ACB662EF90952006813F3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5E0ACB682EF90952006813F3 /* GameRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoom.swift; sourceTree = "<group>"; };
+		5E0ACB692EF90952006813F3 /* NetworkMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMessage.swift; sourceTree = "<group>"; };
+		5E0ACB6A2EF90952006813F3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		5E0ACB6C2EF90952006813F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E0ACB6E2EF90952006813F3 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5E0ACB702EF90952006813F3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5E0ACB712EF90952006813F3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5E0ACB722EF90952006813F3 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		5E0ACB732EF90952006813F3 /* PlayerHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHandView.swift; sourceTree = "<group>"; };
+		5E0ACB842EF90B20006813F3 /* CaboGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaboGameApp.swift; sourceTree = "<group>"; };
+		5E93C5902EFA546800DEF05D /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		5E93C5922EFA55DD00DEF05D /* kahoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kahoot.mp3; sourceTree = "<group>"; };
+		5EBFEEDF2EF907F100B5C7DC /* CaboGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaboGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBFEEEC2EF907F300B5C7DC /* CaboGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaboGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBFEEF62EF907F300B5C7DC /* CaboGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaboGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5EBFEEE12EF907F100B5C7DC /* CaboGame */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CaboGame;
+			sourceTree = "<group>";
+		};
+		5EBFEEEF2EF907F300B5C7DC /* CaboGameTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CaboGameTests;
+			sourceTree = "<group>";
+		};
+		5EBFEEF92EF907F300B5C7DC /* CaboGameUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CaboGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EBFEEDC2EF907F100B5C7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEE92EF907F300B5C7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEF32EF907F300B5C7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E0ACB622EF90952006813F3 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5E0ACB602EF90952006813F3 /* GameEngine.swift */,
+				5E0ACB612EF90952006813F3 /* TurnStateMachine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		5E0ACB672EF90952006813F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E0ACB632EF90952006813F3 /* Card.swift */,
+				5E0ACB642EF90952006813F3 /* GameAction.swift */,
+				5E0ACB652EF90952006813F3 /* GameState.swift */,
+				5E0ACB662EF90952006813F3 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E0ACB6B2EF90952006813F3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5E0ACB682EF90952006813F3 /* GameRoom.swift */,
+				5E0ACB692EF90952006813F3 /* NetworkMessage.swift */,
+				5E0ACB6A2EF90952006813F3 /* WebSocketManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5E0ACB6D2EF90952006813F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E93C5902EFA546800DEF05D /* AudioManager.swift */,
+				5E0ACB6C2EF90952006813F3 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E0ACB6F2EF90952006813F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E0ACB6E2EF90952006813F3 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5E0ACB742EF90952006813F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E0ACB702EF90952006813F3 /* CardView.swift */,
+				5E0ACB712EF90952006813F3 /* GameView.swift */,
+				5E0ACB722EF90952006813F3 /* LobbyView.swift */,
+				5E0ACB732EF90952006813F3 /* PlayerHandView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EBFEED62EF907F100B5C7DC = {
+			isa = PBXGroup;
+			children = (
+				5E93C5922EFA55DD00DEF05D /* kahoot.mp3 */,
+				5E0ACB842EF90B20006813F3 /* CaboGameApp.swift */,
+				5E0ACB622EF90952006813F3 /* Engine */,
+				5E0ACB672EF90952006813F3 /* Models */,
+				5E0ACB6B2EF90952006813F3 /* Networking */,
+				5E0ACB6D2EF90952006813F3 /* Utils */,
+				5E0ACB6F2EF90952006813F3 /* ViewModels */,
+				5E0ACB742EF90952006813F3 /* Views */,
+				5EBFEEE12EF907F100B5C7DC /* CaboGame */,
+				5EBFEEEF2EF907F300B5C7DC /* CaboGameTests */,
+				5EBFEEF92EF907F300B5C7DC /* CaboGameUITests */,
+				5EBFEEE02EF907F100B5C7DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EBFEEE02EF907F100B5C7DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EBFEEDF2EF907F100B5C7DC /* CaboGame.app */,
+				5EBFEEEC2EF907F300B5C7DC /* CaboGameTests.xctest */,
+				5EBFEEF62EF907F300B5C7DC /* CaboGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EBFEEDE2EF907F100B5C7DC /* CaboGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBFEF002EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGame" */;
+			buildPhases = (
+				5EBFEEDB2EF907F100B5C7DC /* Sources */,
+				5EBFEEDC2EF907F100B5C7DC /* Frameworks */,
+				5EBFEEDD2EF907F100B5C7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5EBFEEE12EF907F100B5C7DC /* CaboGame */,
+			);
+			name = CaboGame;
+			packageProductDependencies = (
+			);
+			productName = CaboGame;
+			productReference = 5EBFEEDF2EF907F100B5C7DC /* CaboGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EBFEEEB2EF907F300B5C7DC /* CaboGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBFEF032EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGameTests" */;
+			buildPhases = (
+				5EBFEEE82EF907F300B5C7DC /* Sources */,
+				5EBFEEE92EF907F300B5C7DC /* Frameworks */,
+				5EBFEEEA2EF907F300B5C7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EBFEEEE2EF907F300B5C7DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5EBFEEEF2EF907F300B5C7DC /* CaboGameTests */,
+			);
+			name = CaboGameTests;
+			packageProductDependencies = (
+			);
+			productName = CaboGameTests;
+			productReference = 5EBFEEEC2EF907F300B5C7DC /* CaboGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EBFEEF52EF907F300B5C7DC /* CaboGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBFEF062EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGameUITests" */;
+			buildPhases = (
+				5EBFEEF22EF907F300B5C7DC /* Sources */,
+				5EBFEEF32EF907F300B5C7DC /* Frameworks */,
+				5EBFEEF42EF907F300B5C7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EBFEEF82EF907F300B5C7DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5EBFEEF92EF907F300B5C7DC /* CaboGameUITests */,
+			);
+			name = CaboGameUITests;
+			packageProductDependencies = (
+			);
+			productName = CaboGameUITests;
+			productReference = 5EBFEEF62EF907F300B5C7DC /* CaboGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EBFEED72EF907F100B5C7DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					5EBFEEDE2EF907F100B5C7DC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					5EBFEEEB2EF907F300B5C7DC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 5EBFEEDE2EF907F100B5C7DC;
+					};
+					5EBFEEF52EF907F300B5C7DC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 5EBFEEDE2EF907F100B5C7DC;
+					};
+				};
+			};
+			buildConfigurationList = 5EBFEEDA2EF907F100B5C7DC /* Build configuration list for PBXProject "CaboGame" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EBFEED62EF907F100B5C7DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5EBFEEE02EF907F100B5C7DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EBFEEDE2EF907F100B5C7DC /* CaboGame */,
+				5EBFEEEB2EF907F300B5C7DC /* CaboGameTests */,
+				5EBFEEF52EF907F300B5C7DC /* CaboGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EBFEEDD2EF907F100B5C7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E93C5932EFA55DD00DEF05D /* kahoot.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEEA2EF907F300B5C7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEF42EF907F300B5C7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EBFEEDB2EF907F100B5C7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0ACB752EF90952006813F3 /* GameState.swift in Sources */,
+				5E0ACB762EF90952006813F3 /* LobbyView.swift in Sources */,
+				5E0ACB772EF90952006813F3 /* Player.swift in Sources */,
+				5E93C5912EFA546800DEF05D /* AudioManager.swift in Sources */,
+				5E0ACB782EF90952006813F3 /* Constants.swift in Sources */,
+				5E0ACB792EF90952006813F3 /* WebSocketManager.swift in Sources */,
+				5E0ACB7A2EF90952006813F3 /* CardView.swift in Sources */,
+				5E0ACB7B2EF90952006813F3 /* GameViewModel.swift in Sources */,
+				5E0ACB7C2EF90952006813F3 /* GameAction.swift in Sources */,
+				5E0ACB7D2EF90952006813F3 /* Card.swift in Sources */,
+				5E0ACB7E2EF90952006813F3 /* GameRoom.swift in Sources */,
+				5E0ACB7F2EF90952006813F3 /* TurnStateMachine.swift in Sources */,
+				5E0ACB802EF90952006813F3 /* PlayerHandView.swift in Sources */,
+				5E0ACB852EF90B20006813F3 /* CaboGameApp.swift in Sources */,
+				5E0ACB812EF90952006813F3 /* NetworkMessage.swift in Sources */,
+				5E0ACB822EF90952006813F3 /* GameView.swift in Sources */,
+				5E0ACB832EF90952006813F3 /* GameEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEE82EF907F300B5C7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBFEEF22EF907F300B5C7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EBFEEEE2EF907F300B5C7DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EBFEEDE2EF907F100B5C7DC /* CaboGame */;
+			targetProxy = 5EBFEEED2EF907F300B5C7DC /* PBXContainerItemProxy */;
+		};
+		5EBFEEF82EF907F300B5C7DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EBFEEDE2EF907F100B5C7DC /* CaboGame */;
+			targetProxy = 5EBFEEF72EF907F300B5C7DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5EBFEEFE2EF907F300B5C7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EBFEEFF2EF907F300B5C7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EBFEF012EF907F300B5C7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZJ49FTUR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EBFEF022EF907F300B5C7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZJ49FTUR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EBFEF042EF907F300B5C7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaboGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaboGame";
+			};
+			name = Debug;
+		};
+		5EBFEF052EF907F300B5C7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaboGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaboGame";
+			};
+			name = Release;
+		};
+		5EBFEF072EF907F300B5C7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaboGame;
+			};
+			name = Debug;
+		};
+		5EBFEF082EF907F300B5C7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mimik.CaboGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaboGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EBFEEDA2EF907F100B5C7DC /* Build configuration list for PBXProject "CaboGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBFEEFE2EF907F300B5C7DC /* Debug */,
+				5EBFEEFF2EF907F300B5C7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EBFEF002EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBFEF012EF907F300B5C7DC /* Debug */,
+				5EBFEF022EF907F300B5C7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EBFEF032EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBFEF042EF907F300B5C7DC /* Debug */,
+				5EBFEF052EF907F300B5C7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EBFEF062EF907F300B5C7DC /* Build configuration list for PBXNativeTarget "CaboGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBFEF072EF907F300B5C7DC /* Debug */,
+				5EBFEF082EF907F300B5C7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EBFEED72EF907F100B5C7DC /* Project object */;
+}
